@@ -1,0 +1,82 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Vazer';
+    src: url('../fonts/vazir-Black.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+    font-family: 'Vazer';
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../images/patern.jpg);
+}
+
+body .main .input {
+    box-sizing: content-box;
+    width: 23px;
+    height: 52px;
+    font-size: 30px;
+    position: absolute;
+    margin: 2px 2px;
+    padding: 0px 4px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    border: none;
+}
+
+body .main .input.active {
+    width: 300px;
+}
+
+body .main #btnSerch {
+    position: absolute;
+    height: 56px;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+    -ms-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+}
+
+body .main #btnSerch.active {
+    margin-right: 360px;
+}
+
+body .main #btnSerch #btnSerch2 {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
